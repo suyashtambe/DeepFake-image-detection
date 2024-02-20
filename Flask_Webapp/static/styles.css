@@ -1,0 +1,52 @@
+/* Body style */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Set a light background color */
+    background-image: url('background.jpg'); /* Add a background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+}
+
+/* Style for heading */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px; /* Add space from the top */
+}
+
+/* Style for form */
+form {
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 50%; /* Set the width of the form */
+    max-width: 500px; /* Maximum width for larger screens */
+}
+
+/* Style for file input */
+input[type="file"] {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #0074D9;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Style for paragraph */
+p {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px; /* Add space from the top */
+    color: #555; /* Darker text color */
+}
