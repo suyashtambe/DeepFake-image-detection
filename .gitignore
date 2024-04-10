@@ -1,3 +1,5 @@
 .idea
 .git
 test.ipynb
+*.pdf
+*.ipynb_checkpoints
