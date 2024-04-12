@@ -6,7 +6,7 @@ import numpy as np
 import base64
 
 # Load the trained model
-model = load_model(r'trained_model.h5')
+model = load_model(r'deepfake_autoencoder.keras')
 
 # Function to get base64 encoding of a binary file
 def get_base64(bin_file):
@@ -50,7 +50,7 @@ def preprocess_image(image_bytes):
     nparr = np.frombuffer(image_bytes.read(), np.uint8)
     image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
     image = cv2.resize(image, (256, 256))
-    image = image / 255.0  
+    image = image / 255.0
     return image
 
 # Function to predict deepfake from image
