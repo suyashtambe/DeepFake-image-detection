@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Deepfake Detection Results</title>
 </head>
 <body>
-    <h1>Results</h1>
-    <p>{{ predictions }}</p>
+    <h1>Deepfake Detection Results</h1>
+
+    {% if context == 0%}
+    <p>The image is <b>DEEPFAKE{{context}}</b></p>
+    {% else %}
+    <p>The image is <b>REAL{{context}}</b></p>
+    {% endif %}
+
+    <a href="/">Back to Home</a>
 </body>
 </html>
