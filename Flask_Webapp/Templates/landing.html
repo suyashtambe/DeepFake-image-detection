@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+
+<html>
+		<section id="one" style="background: linear-gradient(to right, #685d84, #010c4d); padding: 50px;">
+			<div class="inner" style="background-color: #dacbcb; padding: 20px; border-radius: 10px;">
+				<header class="major" style="text-align: center;">
+					<h1 style="font-size: 2.5em; color: #333; font-weight: 700; margin-bottom: 20px; background-color: #ffffff; border-radius: 8px; display: inline-block; padding: 10px 20px;">Social Media Deepfakes</h1>
+				</header>
+				<!-- Description of social media deepfakes -->
+				<p style="font-size: 1.1em; color: #666; line-height: 1.6; text-align: justify; background-color: #ffffff; padding: 15px; border-radius: 8px;">
+					Social media platforms have become fertile ground for the spread of deepfakes, which are synthetic media in which a person in an existing image or video is replaced with someone else's likeness. These deepfakes can be used for parody, satire, or malicious intent, blurring the line between reality and fabrication.
+				</p>
+				
+				<!-- Upload Button -->
+				<form method="post" enctype="multipart/form-data" action="your-server-side-code" style="text-align: center; margin-top: 30px;">
+					<input type="file" id="fileUpload" name="fileUpload" style="display: none;" onchange="document.getElementById('fileName').textContent = this.files[0].name">
+					<label for="fileUpload" style="cursor: pointer; background-color: #007BFF; color: rgb(255, 255, 255); padding: 15px 30px; font-size: 1.2em; border-radius: 5px; transition: background-color 0.3s;">Choose File</label>
+					<span id="fileName" style="margin-left: 10px; font-size: 1em;">No file chosen</span>
+					<br>
+					<button type="submit" style="margin-top: 20px; background-color: #28a745; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Upload Image</button>
+				</form>
+			</div>
+		</section>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var fileInput = document.getElementById('fileUpload');
+				var submitButton = document.querySelector('form button[type="submit"]');
+			
+				fileInput.addEventListener('change', function() {
+					if (this.files.length > 0) {
+						submitButton.style.backgroundColor = '#ffc107'; // Change button color when file is selected
+					}
+				});
+			});
+		</script>
+
+		<section id="one" style="background: linear-gradient(to right, #685d84, #010c4d); padding: 50px;">
+			<div class="inner" style="background-color: #f8f8f8; padding: 20px; border-radius: 10px;">
+				<header class="major" style="text-align: center;">
+					<h1 style="font-size: 2.5em; color: #333; font-weight: 700; margin-bottom: 20px; background-color: #ffffff; border-radius: 8px; display: inline-block; padding: 10px 20px;">News, Articles and Media</h1>
+				</header>
+				<!-- Description of news, articles, and media -->
+				<p style="font-size: 1.1em; color: #666; line-height: 1.6; text-align: justify; background-color: #ffffff; padding: 15px; border-radius: 8px;">
+					In the age of information, news, articles, and media play a crucial role in shaping public opinion. However, the emergence of deepfake technology has introduced challenges in distinguishing between authentic and manipulated content. This form allows you to upload images for analysis to detect potential deepfakes, ensuring the integrity of the information you consume.
+				</p>
+				
+				<!-- Upload Button -->
+				<form method="post" enctype="multipart/form-data" action="your-server-side-code" style="text-align: center; margin-top: 30px;">
+					<input type="file" id="fileUploadMedia" name="fileUploadMedia" style="display: none;" onchange="document.getElementById('fileNameMedia').textContent = this.files[0].name">
+					<label for="fileUploadMedia" style="cursor: pointer; background-color: #3498db; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 5px; transition: background-color 0.3s;">Choose File</label>
+					<span id="fileNameMedia" style="margin-left: 10px; font-size: 1em;">No file chosen</span>
+					<br>
+					<button type="submit" style="margin-top: 20px; background-color: #16a085; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Upload Image</button>
+				</form>
+			</div>
+		</section>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var fileInputMedia = document.getElementById('fileUploadMedia');
+				var submitButtonMedia = document.querySelector('form button[type="submit"]');
+			
+				fileInputMedia.addEventListener('change', function() {
+					if (this.files.length > 0) {
+						submitButtonMedia.style.backgroundColor = '#e74c3c'; // Change button color when file is selected
+					}
+				});
+			});
+		</script>
+	
+		<section id="one" style="background: linear-gradient(to right, #2c3e50, #4ca1af); padding: 50px;">
+			<div class="inner" style="background-color: #ffe0b3; padding: 20px; border-radius: 10px;">
+				<header class="major" style="text-align: center;">
+					<h1 style="font-size: 2.5em; color: #333; font-weight: 700; margin-bottom: 20px; background-color: #ffffff; border-radius: 8px; display: inline-block; padding: 10px 20px;">Content Marketing by Companies</h1>
+				</header>
+				<!-- Description of content marketing by companies -->
+				<p style="font-size: 1.1em; color: #666; line-height: 1.6; text-align: justify; background-color: #ffffff; padding: 15px; border-radius: 8px;">
+					Content marketing is a strategic approach focused on creating and distributing valuable, relevant, and consistent content to attract and retain a clearly defined audience — and, ultimately, to drive profitable customer action. Companies use this as a major strategy to engage with their audience and establish their brand presence. Here you can upload your company's marketing content for analysis and optimization suggestions.
+				</p>
+				
+				<!-- Upload Button -->
+				<form method="post" enctype="multipart/form-data" action="your-server-side-code" style="text-align: center; margin-top: 30px;">
+					<input type="file" id="fileUploadContent" name="fileUploadContent" style="display: none;" onchange="document.getElementById('fileNameContent').textContent = this.files[0].name">
+					<label for="fileUploadContent" style="cursor: pointer; background-color: #f39c12; color: white; padding: 15px 30px; font-size: 1.2em; border-radius: 5px; transition: background-color 0.3s;">Choose File</label>
+					<span id="fileNameContent" style="margin-left: 10px; font-size: 1em;">No file chosen</span>
+					<br>
+					<button type="submit" style="margin-top: 20px; background-color: #d35400; color: white; padding: 15px 30px; font-size: 1.2em; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">Upload Content</button>
+				</form>
+			</div>
+		</section>
+		
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var fileInputContent = document.getElementById('fileUploadContent');
+				var submitButtonContent = document.querySelector('form button[type="submit"]');
+			
+				fileInputContent.addEventListener('change', function() {
+					if (this.files.length > 0) {
+						submitButtonContent.style.backgroundColor = '#c0392b'; // Change button color when file is selected
+					}
+				});
+			});
+		</script>
+	
+		<section>
+
+
+		
+		</body>
+		</html>
